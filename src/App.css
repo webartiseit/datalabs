@@ -1,38 +1,193 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,700&display=swap');
+:root{
+  --theme-color:#274369;
+  --theme-color2:#1DAD8F;
+  --theme-color3:#88ADCC;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: var(--bs-black);
+}
+.btn-theme{
+  background-color: var(--theme-color2);
+  color: var(--bs-white);
+  border: 2px solid var(--theme-color2);
+}
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active{
+  background-color: var(--bs-white);
+  color: var(--theme-color2) ;
+  border: 2px solid var(--theme-color2);
+}
+.navbar{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.navbar-brand{
+  max-width: 230px;
+}
+.navbar-dark .nav-link{
+  color: var(--bs-white);
+  font-size: 16px;
+  font-weight: 500;
+}
+.navbar-dark.bg-white .nav-link{
+  color: var(--bs-black);
+}
+.mainbanner{
+    width: 100%;
+    height: 90vh;
+    padding: 10rem 0 10rem;
+    background: url(./images/main-banner.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.mainbanner::before{
+  content: '';
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #00000082;
+}
+.banner-content{
+  position: relative;
+  z-index: 99;
+  max-width: 70%;
+}
+.banner-content h1{
+  color: var(--bs-white);
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+.banner-content p{
+  color: var(--bs-white);
+  font-size: 16px;
+}
+.services-sec .title{
+  color: var(--theme-color3);
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.services-sec .description{
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+}
+.services-sec img{
+    right: -8%;
+    position: relative;
+}
+.divider1{
+  height: 9px;
+  background-color: var(--theme-color3);
+}
+.services-sec .accordion-button:not(.collapsed){
+  background-color: transparent;
+}
+.services-sec .accordion .accordion-item{
+  border:none;
+ }
+ .services-sec .accordion .accordion-body{
+  padding-left: 0px;
+ }
+.services-sec .accordion .accordion-body a{
+ color: var(--theme-color3);
+ font-size: 18px;
+ letter-spacing: 1px;
+ font-weight: 600;
+ text-decoration: none;
+ margin-top: 10px;
+}
+.services-sec .accordion-button {
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--theme-color3);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-left: 0px;
+}
+.whychoose-us{
+  width: 100%;
+  padding: 3rem 0 3rem;
+  background: url(./images/bg1.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.whychoose-us .icon{
+  width: 60px;
+}
+.whychoose-us .icon{
+  width: 60px;
+}
+.whychoose-us .h5{
+  color: var(--bs-white);
+  font-size: 26px;
+}
+.whychoose-us p{
+  color: var(--bs-white);
+}
+.industies-home .title{
+  font-size: 26px;
+  font-weight: 400;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.industies-home .industry-block{
+  position: relative;
+  margin-top: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.industies-home .industry-block .industry-content{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: var(--bs-white);
+  padding: 1.5rem;
+  border-bottom: 15px solid var(--theme-color2);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.industies-home .industry-block .industry-content .h5{
+  margin-bottom: 17px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  min-height: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+.industies-home .industry-block .industry-content p{
+  font-size: 14px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.trusted-by .title{
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+.cat1{
+  background-color: #88ADCC;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.cat1 .title{
+  font-size: 40px;
+  font-weight: 800;
+}
+.cat1 p{
+  font-size: 24px;
+}
+.footer{
+  background-color:var(--theme-color);
+}
+.footer .social-icon{
+  width: 20px;
+  margin-right: 10px;
+}
+.footer .footer-links li a{
+  text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
 }
