@@ -166,7 +166,7 @@ body{
     font-weight: 400;
     text-align: center;
 }
-.cat1{
+.cat1, .cat2{
   background-color: #88ADCC;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -177,6 +177,14 @@ body{
 }
 .cat1 p{
   font-size: 24px;
+}
+.cat2 .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.cat2 .p{
+  font-size: 16px;
+  font-weight: 300;
 }
 .footer{
   background-color:var(--theme-color);
@@ -190,4 +198,98 @@ body{
     color: #fff;
     margin-bottom: 5px;
     display: block;
+}
+.inner-banner{
+  width: 100%;
+  padding: 14rem 1rem 11rem;
+  background-size: cover;
+  position: relative;
+}
+.inner-banner::before{
+ content: '';
+ position: absolute;
+ background-color: #00000082;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 1;
+}
+.inner-banner h1{
+  font-size: 3.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: var(--bs-white);
+  font-weight: 600;
+}
+.inner-banner.service1{
+  background: url(./images/data-integration.jpg) no-repeat center center;
+}
+.inner-banner.service2{
+  background: url(./images/etl.jpg) no-repeat center center;
+}
+.inner-banner.service3{
+  background: url(./images/data-werehousing.jpg) no-repeat center center;
+}
+.zigzag .title{
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+}
+.zigzag .sub-title{
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+.zigzag .description{
+  font-weight: 300;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 13px;
+}
+.zigzag ul li{
+  font-weight: 300;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 13px;
+}
+.zigzag ul li strong{
+  font-weight: 500!important;
+}
+.zigzag ul li i{
+  color: var(--theme-color2);
+  font-size: 13px;
+  position: absolute;
+  left: 0;
+}
+.zigzag .media-image-list li i{
+  color: var(--theme-color2);
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+.zigzag .media-point{
+  margin-bottom: 1.5rem;
+}
+.zigzag .media-point i{
+  color: var(--theme-color2);
+  font-size: 20px;
+}
+.zigzag .media-point .h5{
+  font-size: 15px;
+}
+.zigzag .media-point img{
+  width: 57px;
+  background:#fff;
+  padding: 10px;
+  border-radius: 10%;
+}
+.zigzag .media-point ul li {
+  padding-left: 30px;
 }

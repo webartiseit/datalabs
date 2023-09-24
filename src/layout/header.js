@@ -38,18 +38,15 @@ function MainHeader() {
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About Us</Nav.Link>
             <NavDropdown title="Our Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/data-inegration">Data Integration</NavDropdown.Item>
+              <NavDropdown.Item href="/etl">ETL (Extract, Transform, Load)</NavDropdown.Item>
+              <NavDropdown.Item href="/data-werehousing">Data Warehousing</NavDropdown.Item>
+              <NavDropdown.Item href="/big-data-processing">Big Data Processing </NavDropdown.Item>
+              <NavDropdown.Item href="/data-pipeline-development">Data Pipeline Development</NavDropdown.Item>
+              <NavDropdown.Item href="/data-governance">Data Governance</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/industies">Industries</Nav.Link>
             <Nav.Link href="/careers">Careers</Nav.Link>
