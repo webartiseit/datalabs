@@ -30,7 +30,7 @@ const Home =()=>{
                     <Row>
                         <Col md={5}>
                             <h2 className="title">OUR SERVICES</h2>
-                            <p className="description">End-To-End Services for Developing Modern Datlasa Applications & AI</p>
+                            <p className="description">End-To-End Services for Developing Modern DataLabs Applications & AI</p>
                             <div className="divider1 mb-4"></div>
                             <HomeServices/>
                         </Col>
